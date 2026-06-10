@@ -1,0 +1,16 @@
+{"timestamp":"00:00:00.627","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:00.627","source":"Server","level":"LOG","message":"  We detected TypeScript in your project and reconfigured your tsconfig.json file for you."}
+{"timestamp":"00:00:00.627","source":"Server","level":"LOG","message":"  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:\n"}
+{"timestamp":"00:00:00.627","source":"Server","level":"LOG","message":"  \t- target was set to ES2017 (For top-level `await`. Note: Next.js only polyfills for the esmodules target.)"}
+{"timestamp":"00:00:00.627","source":"Server","level":"LOG","message":"  \t- include was updated to add '.next/dev/types/**/*.ts'"}
+{"timestamp":"00:00:00.627","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:00.628","source":"Server","level":"LOG","message":"  The following mandatory changes were made to your tsconfig.json:\n"}
+{"timestamp":"00:00:00.628","source":"Server","level":"LOG","message":"  \t- jsx was set to react-jsx (next.js uses the React automatic runtime)"}
+{"timestamp":"00:00:00.628","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:00.740","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:11.143","source":"Browser","level":"WARN","message":"Image with src \"/image/profile.jpg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes"}
+{"timestamp":"00:00:11.143","source":"Browser","level":"WARN","message":"Image with src \"/image/profile.jpg\" has \"fill\" and parent element with invalid \"position\". Provided \"static\" should be one of absolute,fixed,relative."}
+{"timestamp":"00:00:11.178","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/image/profile.jpg\\\" has \\\"fill\\\" but is missing \\\"sizes\\\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\\u001b[39m\" \"\\u001b[2m(file://E:/web 2026/simple-folio/resume-site 0.1.1/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)\\u001b[22m\""}
+{"timestamp":"00:00:11.178","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"/image/profile.jpg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\u001b[39m"}
+{"timestamp":"00:00:11.188","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/image/profile.jpg\\\" has \\\"fill\\\" and parent element with invalid \\\"position\\\". Provided \\\"static\\\" should be one of absolute,fixed,relative.\\u001b[39m\" \"\\u001b[2m(file://E:/web 2026/simple-folio/resume-site 0.1.1/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)\\u001b[22m\""}
+{"timestamp":"00:00:11.188","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"/image/profile.jpg\" has \"fill\" and parent element with invalid \"position\". Provided \"static\" should be one of absolute,fixed,relative.\u001b[39m"}
