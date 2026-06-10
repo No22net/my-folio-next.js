@@ -7,7 +7,8 @@
 
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { Mail, Linkedin, Github, MapPin, Send, CheckCircle } from "lucide-react";
+import { Mail, MapPin, Send, CheckCircle } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { PERSONAL_INFO } from "@/constants";
 
 // ───── آیتم‌های اطلاعات تماس ─────
@@ -20,14 +21,14 @@ const contactItems = [
     color: "#6366f1",
   },
   {
-    icon: Linkedin,
+    icon: FaLinkedin,
     label: "لینکدین",
     value: "www.linkedin.com/in/matin-ghaderyan",
     href: PERSONAL_INFO.linkedin,
     color: "#0077b5",
   },
   {
-    icon: Github,
+    icon: FaGithub,
     label: "گیت‌هاب",
     value: "github.com/No22net",
     href: PERSONAL_INFO.github,

@@ -7,7 +7,8 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Github, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { FaGithub } from "react-icons/fa6";
 import { PROJECTS } from "@/constants";
 
 // ───── کامپوننت یک کارت پروژه ─────
@@ -106,7 +107,7 @@ function ProjectCard({
             whileTap={{ scale: 0.95 }}
             className="btn-outline flex-1 flex items-center justify-center gap-2 text-sm py-2"
           >
-            <Github className="w-4 h-4" />
+            <FaGithub size={16} />
             <span>کد</span>
           </motion.a>
 

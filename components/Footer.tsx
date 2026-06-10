@@ -6,7 +6,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Heart, Code2 } from "lucide-react";
+import { Mail, Heart, Code2 } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { PERSONAL_INFO } from "@/constants";
 
 export default function Footer() {
@@ -17,13 +18,13 @@ export default function Footer() {
 
   const socials = [
     {
-      icon: Github,
+      icon: FaGithub,
       href: PERSONAL_INFO.github,
       label: "گیت‌هاب",
       color: "hover:text-gray-800",
     },
     {
-      icon: Linkedin,
+      icon: FaLinkedin,
       href: PERSONAL_INFO.linkedin,
       label: "لینکدین",
       color: "hover:text-blue-600",

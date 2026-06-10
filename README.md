@@ -1,144 +1,112 @@
+<div align="right" dir="rtl">
 
-# My Folio - Next.js Portfolio
+# 🧑‍💻 پورتفولیوی شخصی – متین قادریان
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.x-06B6D4)](https://tailwindcss.com/)
+یک سایت رزومه و پورتفولیو مدرن با طراحی **Glassmorphism + Neumorphism** ساخته شده با **Next.js 16** و **React 19**.
 
-A modern, fully customizable online resume and portfolio built with **Next.js 14**, featuring a unique **Neumorphism + Glassmorphism** design aesthetic. It includes smooth Framer Motion animations, a Persian font (Vazirmatn) with RTL support, and a centralized data structure for easy personalization.
+---
 
-![Project Screenshot Placeholder](public/screenshot.png) *Replace with an actual screenshot*
+## ✨ ویژگی‌ها
 
-##  Features
+- 🇮🇷 **فارسی (RTL)** — پشتیبانی کامل از راست‌به‌چپ با فونت Vazirmatn
+- 🎨 **Glassmorphism + Neumorphism** — طراحی مدرن با افکت شیشه‌ای و سه‌بعدی
+- 🌀 **انیمیشن‌های روان** — با Framer Motion
+- 📱 **ریسپانسیو** — واکنش‌گرا برای موبایل، تبلت و دسکتاپ
+- ⚡ **Next.js 16 + Turbopack** — بارگذاری فوق‌سریع
+- 🔍 **سئو‌بهینه** — متادیتا، Open Graph و Robots
+- 🔒 **امنیت** — سرصفحه‌های امنیتی HTTP
 
-- **Modern Stack:** Built with Next.js 14 (App Router), TypeScript, and Tailwind CSS.
-- **Unique Design System:** Combines Neumorphism and Glassmorphism UI effects.
-- **Smooth Animations:** Page transitions and element animations powered by `framer-motion`.
-- **Fully Customizable:** All portfolio data (personal info, skills, projects, experience) lives in a single file (`constants/index.ts`).
-- **RTL Ready:** Includes the Vazirmatn font, suitable for Persian/Arabic scripts, though easily adaptable to LTR.
-- **Responsive:** Looks great on all device sizes.
+## 🛠️ تکنولوژی‌ها
 
-##  Getting Started
+| ابزار | نسخه |
+|-------|-------|
+| **Next.js** | 16.x |
+| **React** | 19.x |
+| **TypeScript** | 6.x |
+| **Tailwind CSS** | 3.4.x |
+| **Framer Motion** | 12.x |
+| **Lucide React** | 1.x |
 
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+## 🗂️ ساختار پروژه
 
-### Prerequisites
+```
+my-folio/
+├── app/
+│   ├── layout.tsx      # لایه اصلی + متادیتا
+│   ├── page.tsx        # صفحه اصلی
+│   └── globals.css     # استایل‌های پایه
+├── components/
+│   ├── Navbar.tsx      # نوار ناوبری
+│   ├── Hero.tsx        # بخش معرفی
+│   ├── Skills.tsx      # مهارت‌ها
+│   ├── Projects.tsx    # پروژه‌ها
+│   ├── Experience.tsx  # تجربیات و تحصیلات
+│   ├── Contact.tsx     # فرم تماس
+│   └── Footer.tsx      # فوتر
+├── constants/
+│   └── index.ts        # داده‌های رزومه (اینجا ویرایش کنید!)
+└── public/
+    └── image/
+        └── profile.jpg # عکس پروفایل
+```
 
-- Node.js (version 18.x or later)
-- npm, yarn, or pnpm
+## 🚀 راه‌اندازی
 
-### Installation
+### پیش‌نیازها
+- **Node.js** نسخه ۱۸ یا بالاتر
+- **npm** یا **yarn**
 
-1.  **Clone the repository**
-    ```bash
-    git clone https://github.com/No22net/my-folio-next.js.git
-    cd my-folio-next.js
-Install dependencies
+### نصب
 
-bash
+```bash
+# کلون کردن
+git clone https://github.com/No22net/my-folio.git
+cd my-folio
+
+# نصب وابستگی‌ها
 npm install
-# or
-yarn install
-# or
-pnpm install
-Run the development server
 
-bash
+# اجرا در حالت توسعه
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-Open your browser
-Navigate to http://localhost:3000 to see the result.
+```
 
- Project Structure
-text
-my-folio-next.js/
-├── app/                    # Next.js App Router
-│   ├── globals.css         # Global styles (Neumorphism/Glassmorphism)
-│   ├── layout.tsx          # Root layout (includes font & structure)
-│   └── page.tsx            # Home page (assembles components)
-├── components/             # Reusable UI components
-│   ├── Navbar.tsx
-│   ├── Hero.tsx
-│   ├── Skills.tsx
-│   ├── Projects.tsx
-│   ├── Experience.tsx
-│   ├── Contact.tsx
-│   └── Footer.tsx
-├── constants/              # 📝 Centralized data for easy customization
-│   └── index.ts            # <-- Edit this file with your information
-├── public/                 # Static assets (images, icons, etc.)
-│   └── image/              # Place your project & profile images here
-└── ... (config files)
- Customization Guide
-To make this portfolio your own, you only need to edit one file: constants/index.ts.
+سایت روی `http://localhost:3000` در دسترس خواهد بود.
 
-Inside this file, you will find the following export objects. Replace the example data with your own:
+### ساخت نسخه نهایی
 
-PERSONAL_INFO : Your name, title (e.g., "Frontend Developer"), short bio, and social media links (GitHub, LinkedIn, etc.).
+```bash
+npm run build
+npm run start
+```
 
-SKILLS : A list of your technical skills and proficiency percentage (e.g., { name: "React", level: 90 }).
+## ✏️ شخصی‌سازی
 
-PROJECTS : Details of your work. For each project, add a title, description, tech stack, links, and the image filename (place images in /public/image).
+تمام اطلاعات رزومه در یک فایل است:
 
-EXPERIENCES / EDUCATIONS : Your work history and academic background with dates, titles, and descriptions.
+**`constants/index.ts`**
 
-Adding a Profile Picture
-Place your profile image in the public/image/ folder.
+```ts
+export const PERSONAL_INFO = {
+  name: "نام شما",
+  title: "عنوان شغلی",
+  email: "email@example.com",
+  github: "https://github.com/username",
+  // ...
+};
+```
 
-Open components/Hero.tsx.
+برای تغییر عکس پروفایل، فایل `public/image/profile.jpg` را جایگزین کنید.
 
-Replace the placeholder <div> with a standard Next.js Image component:
+## 📦 دیپلوی
 
-tsx
-import Image from 'next/image';
+برای دیپلوی روی **Vercel**:
 
-// Inside the Hero component
-<div className="relative w-32 h-32 mx-auto mb-6">
-  <Image
-    src="/image/your-profile-pic.jpg" // Path to your image
-    alt="Profile Picture"
-    fill
-    className="rounded-full object-cover"
-  />
+```bash
+npx vercel
+```
+
+## 📄 لایسنس
+
+MIT © [متین قادریان](https://github.com/No22net)
+
 </div>
- Built With
-Next.js 14 - React framework with App Router
-
-TypeScript - Type safety
-
-Tailwind CSS - Utility-first CSS framework
-
-Framer Motion - Animation library
-
-Vazirmatn - Persian/Arabic font
-
- Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-Fork the Project
-
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-
-Push to the Branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
- License
-Distributed under the MIT License. See LICENSE file for more information.
-
- Contact
-Project Maintainer - @No22net
-
-Project Link: https://github.com/No22net/my-folio-next.js
-
- Star this project on GitHub — it helps a lot!
-
-text
-
-This `README.md` is structured to be immediately usable for your GitHub project, highlighting its unique design, ease of customization, and professional setup.
