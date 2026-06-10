@@ -1,5 +1,4 @@
-برای این پروژه یک reedme حرفه ای انگلیسی بساز
-markdown
+
 # My Folio - Next.js Portfolio
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
