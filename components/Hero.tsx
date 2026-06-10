@@ -13,6 +13,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import Image from "next/image";
+import profilePic from '@/public/image/profile.jpg';
 import { PERSONAL_INFO } from "@/constants";
 
 // ───── variant‌های انیمیشن ─────
@@ -199,7 +200,7 @@ export default function Hero() {
               >
                 {/* عکس پروفایل */}
                 <Image
-                  src="/image/profile.jpg"
+                  src={profilePic}
                   alt={PERSONAL_INFO.name}
                   fill
                   className="object-cover object-top"
