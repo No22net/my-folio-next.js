@@ -12,6 +12,7 @@ import {
   MapPin,
   Sparkles,
 } from "lucide-react";
+import Image from "next/image";
 import { PERSONAL_INFO } from "@/constants";
 
 // ───── variant‌های انیمیشن ─────
@@ -193,31 +194,14 @@ export default function Hero() {
                   boxShadow: "12px 12px 24px #c5cdd8, -12px -12px 24px #ffffff",
                 }}
               >
-                {/* داخل پلاس‌هولدر */}
-                <div className="w-full h-full flex flex-col items-center justify-center relative overflow-hidden">
-                  {/* پس‌زمینه گرادیانت داخلی */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-100/60 to-cyan-100/40" />
-                  
-                  {/* آیکون نمادین */}
-                  <div className="relative z-10 flex flex-col items-center gap-3">
-                    <div
-                      className="w-24 h-24 rounded-full flex items-center justify-center"
-                      style={{
-                        background: "linear-gradient(135deg, #6366f1 0%, #06b6d4 100%)",
-                        boxShadow: "0 8px 25px rgba(99,102,241,0.4)",
-                      }}
-                    >
-                      {/* سیلوئت ساده انسان */}
-                      <svg viewBox="0 0 60 60" className="w-14 h-14 fill-white/90">
-                        <circle cx="30" cy="20" r="12" />
-                        <path d="M6 54c0-13.255 10.745-24 24-24s24 10.745 24 24" />
-                      </svg>
-                    </div>
-                    <p className="text-xs text-gray-400 font-medium">
-                      عکس من اینجا
-                    </p>
-                  </div>
-                </div>
+                {/* عکس پروفایل */}
+                <Image
+                  src="/image/profile.jpg"
+                  alt={PERSONAL_INFO.name}
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
               </div>
 
               {/* برچسب تجربه – گوشه‌ای */}

@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     "رزومه حرفه‌ای متین قادریان، توسعه‌دهنده فرانت‌اند متخصص در React و Next.js",
   keywords: ["توسعه‌دهنده", "فرانت‌اند", "React", "Next.js", "رزومه"],
   authors: [{ name: "متین قادریان" }],
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

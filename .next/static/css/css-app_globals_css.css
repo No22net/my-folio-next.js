@@ -778,17 +778,11 @@ video {
 .h-12{
   height: 3rem;
 }
-.h-14{
-  height: 3.5rem;
-}
 .h-16{
   height: 4rem;
 }
 .h-2{
   height: 0.5rem;
-}
-.h-24{
-  height: 6rem;
 }
 .h-3{
   height: 0.75rem;
@@ -844,17 +838,11 @@ video {
 .w-12{
   width: 3rem;
 }
-.w-14{
-  width: 3.5rem;
-}
 .w-16{
   width: 4rem;
 }
 .w-2{
   width: 0.5rem;
-}
-.w-24{
-  width: 6rem;
 }
 .w-3{
   width: 0.75rem;
@@ -1111,11 +1099,6 @@ video {
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
-.from-indigo-100\/60{
-  --tw-gradient-from: rgb(224 231 255 / 0.6) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(224 231 255 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
 .from-indigo-200\/40{
   --tw-gradient-from: rgb(199 210 254 / 0.4) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(199 210 254 / 0) var(--tw-gradient-to-position);
@@ -1130,9 +1113,6 @@ video {
   --tw-gradient-from: #4f46e5 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(79 70 229 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-.to-cyan-100\/40{
-  --tw-gradient-to: rgb(207 250 254 / 0.4) var(--tw-gradient-to-position);
 }
 .to-cyan-200\/40{
   --tw-gradient-to: rgb(165 243 252 / 0.4) var(--tw-gradient-to-position);
@@ -1153,8 +1133,13 @@ video {
 .fill-red-400{
   fill: #f87171;
 }
-.fill-white\/90{
-  fill: rgb(255 255 255 / 0.9);
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.object-top{
+  -o-object-position: top;
+     object-position: top;
 }
 .p-1\.5{
   padding: 0.375rem;

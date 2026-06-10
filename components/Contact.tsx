@@ -22,14 +22,14 @@ const contactItems = [
   {
     icon: Linkedin,
     label: "لینکدین",
-    value: "linkedin.com/in/amirhossein",
+    value: "www.linkedin.com/in/matin-ghaderyan",
     href: PERSONAL_INFO.linkedin,
     color: "#0077b5",
   },
   {
     icon: Github,
     label: "گیت‌هاب",
-    value: "github.com/amirhossein",
+    value: "github.com/No22net",
     href: PERSONAL_INFO.github,
     color: "#24292e",
   },
