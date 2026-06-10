@@ -1,0 +1,173 @@
+/* ─────────────────────────────────────────────────────────────
+   globals.css – استایل‌های پایه، نیومورفیسم، گلاسمورفیسم
+   ───────────────────────────────────────────────────────────── */
+
+/* ───── ایمپورت فونت وزیر – باید قبل از @tailwind باشد ───── */
+@import url("https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ───── متغیرهای CSS ───── */
+:root {
+  --neu-bg: #e8edf5;
+  --neu-light: #ffffff;
+  --neu-dark: #c5cdd8;
+  --accent: #6366f1;
+  --accent-light: #818cf8;
+  --secondary: #06b6d4;
+}
+
+/* ───── تنظیمات کلی ───── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+
+body {
+  font-family: "Vazirmatn", sans-serif;
+  background: linear-gradient(135deg, #e8edf5 0%, #dce4f0 50%, #e2e8f4 100%);
+  min-height: 100vh;
+  color: #374151;
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+/* ───── کلاس‌های کمکی کامپوننت‌ها ───── */
+@layer components {
+
+  /* کارت نیومورفیسم استاندارد */
+  .neu-card {
+    @apply rounded-3xl transition-all duration-300;
+    background: #e8edf5;
+    box-shadow: 8px 8px 16px #c5cdd8, -8px -8px 16px #ffffff;
+  }
+
+  .neu-card:hover {
+    box-shadow: 12px 12px 24px #c5cdd8, -12px -12px 24px #ffffff;
+    transform: translateY(-4px);
+  }
+
+  /* کارت گلاسمورفیسم */
+  .glass-card {
+    @apply rounded-2xl transition-all duration-300;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    box-shadow:
+      0 8px 32px rgba(99, 102, 241, 0.07),
+      inset 0 1px 0 rgba(255, 255, 255, 0.55);
+  }
+
+  .glass-card:hover {
+    background: rgba(255, 255, 255, 0.26);
+    box-shadow:
+      0 16px 48px rgba(99, 102, 241, 0.14),
+      inset 0 1px 0 rgba(255, 255, 255, 0.65);
+    transform: translateY(-4px);
+  }
+
+  /* دکمه گرادیانت */
+  .btn-gradient {
+    @apply relative overflow-hidden rounded-full font-semibold cursor-pointer transition-all duration-300;
+    background: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
+    color: white;
+    padding: 0.75rem 2rem;
+    font-family: "Vazirmatn", sans-serif;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    border: none;
+  }
+
+  .btn-gradient::before {
+    content: "";
+    @apply absolute inset-0 transition-opacity duration-300 opacity-0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), transparent);
+  }
+
+  .btn-gradient:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.45);
+  }
+
+  .btn-gradient:hover::before {
+    @apply opacity-100;
+  }
+
+  .btn-gradient:active {
+    transform: translateY(0);
+  }
+
+  /* دکمه خطی */
+  .btn-outline {
+    @apply rounded-full font-semibold cursor-pointer transition-all duration-300;
+    background: transparent;
+    border: 2px solid rgba(99, 102, 241, 0.45);
+    color: #6366f1;
+    padding: 0.7rem 2rem;
+    font-family: "Vazirmatn", sans-serif;
+    font-size: 0.9rem;
+    backdrop-filter: blur(10px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-outline:hover {
+    background: rgba(99, 102, 241, 0.08);
+    border-color: #6366f1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.18);
+  }
+
+  /* تایتل بخش‌ها */
+  .section-title {
+    @apply text-3xl font-black mb-2;
+    background: linear-gradient(135deg, #4f46e5, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* خط تزئینی زیر تایتل */
+  .title-underline {
+    width: 56px;
+    height: 4px;
+    background: linear-gradient(135deg, #6366f1, #06b6d4);
+    border-radius: 2px;
+    margin: 0 auto 3rem;
+  }
+}
+
+/* ───── اسکرول‌بار زیبا ───── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #e8edf5; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#6366f1, #06b6d4);
+  border-radius: 3px;
+}
+
+/* ───── انتخاب متن ───── */
+::selection {
+  background: rgba(99, 102, 241, 0.18);
+  color: #4f46e5;
+}
+
+/* ───── انیمیشن glow ───── */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.25); }
+  50%       { box-shadow: 0 0 40px rgba(99, 102, 241, 0.55); }
+}
+.pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
