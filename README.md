@@ -1,6 +1,6 @@
 <div dir="rtl" align="center">
   
-# 🧑‍💻 پورتفولیوی شخصی – متین قادریان
+#  پورتفولیوی شخصی – متین قادریان
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 ![Next.js](https://img.shields.io/badge/Next.js-16-black)
@@ -20,12 +20,12 @@
 یک سایت رزومه و پورتفولیو مدرن با طراحی ترکیبی **Glassmorphism + Neumorphism**. این پروژه با استفاده از جدیدترین ابزارهای توسعه وب شامل **Next.js 16** و **React 19** ساخته شده تا تجربه‌ای سریع، زیبا و تعاملی را برای نمایش مهارت‌ها و پروژه‌های شما فراهم کند.
 
 ###  ویژگی‌های کلیدی
-- 🇮🇷 **پشتیبانی کامل از زبان فارسی (RTL)** با فونت Vazirmatn
-- 🎨 **طراحی نوین Glassmorphism + Neumorphism** (افکت شیشه‌ای و سه‌بعدی)
-- 🌀 **انیمیشن‌های روان و جذاب** با استفاده از Framer Motion
-- 📱 **طراحی کاملاً واکنش‌گرا** (Responsive) برای موبایل، تبلت و دسکتاپ
-- ⚡ **سرعت فوق‌العاده** با بهره‌گیری از Turbopack در Next.js 16
-- 🔍 **بهینه برای موتورهای جستجو (SEO)** – شامل متادیتا، Open Graph و Robots
+-  **پشتیبانی کامل از زبان فارسی (RTL)** با فونت Vazirmatn
+-  **طراحی نوین Glassmorphism + Neumorphism** (افکت شیشه‌ای و سه‌بعدی)
+-  **انیمیشن‌های روان و جذاب** با استفاده از Framer Motion
+-  **طراحی کاملاً واکنش‌گرا** (Responsive) برای موبایل، تبلت و دسکتاپ
+-  **سرعت فوق‌العاده** با بهره‌گیری از Turbopack در Next.js 16
+-  **بهینه برای موتورهای جستجو (SEO)** – شامل متادیتا، Open Graph و Robots
   امنیت بالا** با پیاده‌سازی هدرهای امنیتی HTTP
 
 ### تکنولوژی‌های استفاده شده
@@ -60,7 +60,7 @@ my-folio/
 
 text
 
-### 🚀 راه‌اندازی سریع
+###  راه‌اندازی سریع
 
 #### پیش‌نیازها
 - **Node.js** نسخه ۱۸ یا بالاتر
@@ -96,7 +96,7 @@ export const PERSONAL_INFO = {
 };
 همچنین برای تعویض عکس پروفایل، فایل public/image/profile.jpg را جایگزین نمایید.
 
-🌐 استقرار (Deployment)
+ استقرار (Deployment)
 ساده‌ترین روش استفاده از Vercel است:
 
 bash
@@ -124,7 +124,7 @@ npx vercel
 با تشکر از جامعه متن‌باز و تمام افرادی که از ابزارهای فوق‌العاده‌ای مانند Next.js، React، Tailwind CSS و Framer Motion استفاده می‌کنند.
 
 <div dir="ltr" align="center">
-🇬🇧 English Version
+ English Version
  Personal Portfolio – Matin Ghaderian
 https://img.shields.io/badge/License-MIT-green.svg
 https://img.shields.io/badge/Next.js-16-black
@@ -137,7 +137,7 @@ https://img.shields.io/badge/Tailwind-3.4-38B2AC
 A modern resume and portfolio website with a Glassmorphism + Neumorphism design. Built with cutting-edge web technologies including Next.js 16 and React 19 to provide a fast, beautiful, and interactive experience for showcasing your skills and projects.
 
  Key Features
-🇮🇷 Full Persian (RTL) support with Vazirmatn font
+ Full Persian (RTL) support with Vazirmatn font
 
  Modern Glassmorphism + Neumorphism design (glass-like and 3D effects)
 
