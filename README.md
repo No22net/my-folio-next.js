@@ -92,7 +92,6 @@ export const PERSONAL_INFO = {
   title: "طراح فرانت اند",
   email: "matin22.com@gmail.com",
   github: "https://github.com/No22net",
-  // ... سایر اطلاعات
 };
 همچنین برای تعویض عکس پروفایل، فایل public/image/profile.jpg را جایگزین نمایید.
 
