@@ -1,4 +1,5 @@
-markdown
+# My Folio - Personal Portfolio
+
 <div align="center">
   <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License" />
   <img src="https://img.shields.io/badge/Next.js-16-black" alt="Next.js" />
@@ -7,253 +8,203 @@ markdown
   <img src="https://img.shields.io/badge/Tailwind-3.4-38B2AC" alt="Tailwind CSS" />
 </div>
 
-<br />
-
-<div align="center">
-  <h1>My Folio – Personal Portfolio</h1>
-  <p>
-    <strong>A modern personal portfolio with Glassmorphism + Neumorphism hybrid design</strong>
-  </p>
-  <p>
-    <a href="#-فارسی">فارسی</a> •
-    <a href="#-english">English</a>
-  </p>
-</div>
-
 ---
 
-## فارسی
+## Table of Contents
 
-### معرفی
+- [Overview](#overview)
+- [Features](#features)
+- [Technology Stack](#technology-stack)
+- [Project Structure](#project-structure)
+- [Quick Start](#quick-start)
+- [Customization](#customization)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-My Folio یک سایت رزومه و پورتفولیوی شخصی است که با طراحی ترکیبی Glassmorphism و Neumorphism ساخته شده تا تجربه‌ای مدرن، زیبا و تعاملی برای نمایش مهارت‌ها، پروژه‌ها و سوابق کاری شما فراهم کند.
+## Overview
 
-این پروژه با بهره‌گیری از جدیدترین ابزارهای توسعه وب از جمله Next.js 16، React 19 و TypeScript توسعه یافته و عملکردی فوق‌العاده سریع و بهینه دارد.
+My Folio is a modern, professional personal portfolio website built with a hybrid design approach combining Glassmorphism and Neumorphism visual effects. The project demonstrates modern web development practices using Next.js 16, React 19, and TypeScript.
 
-### ویژگی‌های کلیدی
+The portfolio includes full support for both English and Persian (Farsi) languages with proper right-to-left (RTL) text direction handling. It features smooth animations, responsive design, and optimized performance through Turbopack integration.
 
-| ویژگی | توضیح |
-|-------|-------|
-| پشتیبانی کامل از RTL | پشتیبانی کامل از زبان فارسی با فونت زیبای Vazirmatn |
-| طراحی مدرن | ترکیب افکت‌های Glassmorphism (شیشه‌ای) و Neumorphism (سه‌بعدی) |
-| انیمیشن‌های روان | پیاده‌سازی شده با Framer Motion برای تعاملات جذاب |
-| واکنش‌گرا | سازگاری کامل با موبایل، تبلت و دسکتاپ |
-| سرعت فوق‌العاده | استفاده از Turbopack در Next.js 16 |
-| بهینه‌سازی SEO | شامل متادیتا، Open Graph و Robots |
-| امنیت بالا | پیاده‌سازی هدرهای امنیتی HTTP |
+## Features
 
-### تکنولوژی‌های استفاده شده
+| Feature | Description |
+|---------|-------------|
+| RTL Support | Complete Persian language support with Vazirmatn font |
+| Modern Design | Hybrid Glassmorphism and Neumorphism visual effects |
+| Smooth Animations | Framer Motion powered interactive transitions |
+| Responsive Layout | Full compatibility across mobile, tablet, and desktop devices |
+| Performance | Turbopack integration for optimized Next.js 16 builds |
+| SEO Optimization | Comprehensive metadata, Open Graph, and Robots configuration |
+| Security | HTTP security headers implementation |
+| Bilingual | Seamless switching between English and Persian interfaces |
 
-| ابزار | نسخه |
-|-------|------|
-| Next.js | 16.x |
-| React | 19.x |
-| TypeScript | 6.x |
-| Tailwind CSS | 3.4.x |
-| Framer Motion | 12.x |
-| Lucide React | 1.x |
+## Technology Stack
 
-### ساختار پروژه
+| Technology | Version | Purpose |
+|-----------|---------|---------|
+| Next.js | 16.x | React framework and server-side rendering |
+| React | 19.x | UI library and component management |
+| TypeScript | 6.x | Type-safe JavaScript development |
+| Tailwind CSS | 3.4.x | Utility-first CSS framework |
+| Framer Motion | 12.x | Animation and motion library |
+| Lucide React | 1.x | Icon library |
+
+## Project Structure
+
+```
 my-folio/
 ├── app/
-│ ├── layout.tsx # لایه اصلی + متادیتا
-│ ├── page.tsx # صفحه اصلی
-│ └── globals.css # استایل‌های پایه
+│   ├── layout.tsx           # Root layout and metadata configuration
+│   ├── page.tsx             # Main landing page
+│   └── globals.css          # Global styles and CSS variables
 ├── components/
-│ ├── Navbar.tsx # نوار ناوبری
-│ ├── Hero.tsx # بخش معرفی
-│ ├── Skills.tsx # مهارت‌ها
-│ ├── Projects.tsx # پروژه‌ها
-│ ├── Experience.tsx # تجربیات و تحصیلات
-│ ├── Contact.tsx # فرم تماس
-│ └── Footer.tsx # فوتر
+│   ├── Navbar.tsx           # Navigation component
+│   ├── Hero.tsx             # Hero/introduction section
+│   ├── Skills.tsx           # Skills showcase section
+│   ├── Projects.tsx         # Portfolio projects section
+│   ├── Experience.tsx       # Work experience and education
+│   ├── Contact.tsx          # Contact form component
+│   └── Footer.tsx           # Footer section
 ├── constants/
-│ └── index.ts # داده‌های رزومه (اینجا ویرایش کنید!)
-└── public/
-└── image/
-└── profile.jpg # عکس پروفایل
+│   └── index.ts             # Portfolio content data
+├── public/
+│   └── image/
+│       └── profile.jpg      # Profile picture
+└── package.json             # Project dependencies
+```
 
-text
+## Quick Start
 
-### راه‌اندازی سریع
+### Prerequisites
 
-#### پیش‌نیازها
+- Node.js version 18 or higher
+- npm or yarn package manager
+- Git for version control
 
-- Node.js نسخه ۱۸ یا بالاتر
-- npm یا yarn
-
-#### مراحل نصب و اجرا
+### Installation
 
 ```bash
-# کلون کردن مخزن
-git clone https://github.com/No22net/my-folio-next.js.git
-cd my-folio-next.js
-
-# نصب وابستگی‌ها
-npm install
-
-# اجرا در حالت توسعه
-npm run dev
-سایت روی آدرس http://localhost:3000 در دسترس خواهد بود.
-
-ساخت نسخه نهایی
-bash
-npm run build
-npm run start
-شخصی‌سازی (سفارشی‌سازی)
-برای اعمال اطلاعات شخصی خود، کافی است فایل constants/index.ts را ویرایش کنید:
-
-typescript
-export const PERSONAL_INFO = {
-  name: "متین قادریان",
-  title: "طراح فرانت‌اند",
-  email: "matin22.com@gmail.com",
-  github: "https://github.com/No22net",
-};
-همچنین برای تعویض عکس پروفایل، فایل public/image/profile.jpg را جایگزین نمایید.
-
-استقرار (Deployment)
-ساده‌ترین روش استفاده از Vercel است:
-
-bash
-npx vercel
-نحوه مشارکت
-مخزن (Repository) را Fork کنید.
-
-یک Branch جدید برای تغییرات خود ایجاد کنید:
-
-bash
-git checkout -b feature/AmazingFeature
-تغییرات را Commit کنید:
-
-bash
-git commit -m 'Add some AmazingFeature'
-روی Branch خود Push کنید:
-
-bash
-git push origin feature/AmazingFeature
-یک Pull Request باز کنید.
-
-لایسنس
-این پروژه تحت لایسنس MIT منتشر شده است. برای جزئیات بیشتر به فایل LICENSE مراجعه کنید.
-
-ارتباط با من
-گزارش مشکلات (Issues): صفحه Issues در گیت‌هاب
-
-ایمیل: matin.ghaderian@example.com (لطفاً در فایل constants به‌روز کنید)
-
-قدردانی
-با تشکر از جامعه متن‌باز و تمام افرادی که از ابزارهای فوق‌العاده‌ای مانند Next.js، React، Tailwind CSS و Framer Motion استفاده می‌کنند.
-
-
-English
-Introduction
-My Folio is a modern personal resume and portfolio website with a Glassmorphism + Neumorphism hybrid design. Built with cutting-edge web technologies including Next.js 16 and React 19, it provides a fast, beautiful, and interactive experience for showcasing your skills, projects, and work experience.
-
-Key Features
-Feature	Description
-Full RTL Support	Complete Persian language support with Vazirmatn font
-Modern Design	Glassmorphism + Neumorphism visual effects
-Smooth Animations	Powered by Framer Motion for engaging interactions
-Fully Responsive	Optimized for mobile, tablet, and desktop
-Blazing Fast	Turbopack integration in Next.js 16
-SEO Optimized	Metadata, Open Graph, and Robots included
-High Security	HTTP security headers implemented
-Technologies Used
-Tool	Version
-Next.js	16.x
-React	19.x
-TypeScript	6.x
-Tailwind CSS	3.4.x
-Framer Motion	12.x
-Lucide React	1.x
-Project Structure
-text
-my-folio/
-├── app/
-│   ├── layout.tsx        # Root layout + metadata
-│   ├── page.tsx          # Main page
-│   └── globals.css       # Base styles
-├── components/
-│   ├── Navbar.tsx        # Navigation bar
-│   ├── Hero.tsx          # Introduction section
-│   ├── Skills.tsx        # Skills section
-│   ├── Projects.tsx      # Projects section
-│   ├── Experience.tsx    # Experience & education
-│   ├── Contact.tsx       # Contact form
-│   └── Footer.tsx        # Footer
-├── constants/
-│   └── index.ts          # Resume data (edit here!)
-└── public/
-    └── image/
-        └── profile.jpg   # Profile picture
-Quick Start
-Prerequisites
-Node.js version 18 or higher
-
-npm or yarn
-
-Installation & Running
-bash
 # Clone the repository
 git clone https://github.com/No22net/my-folio-next.js.git
 cd my-folio-next.js
 
-# Install dependencies
+# Install project dependencies
 npm install
+```
 
-# Run in development mode
+### Development
+
+```bash
+# Start development server
 npm run dev
-The site will be available at http://localhost:3000.
+```
 
-Production Build
-bash
+The application will be available at `http://localhost:3000` in your browser.
+
+### Production Build
+
+```bash
+# Create optimized production build
 npm run build
+
+# Start production server
 npm run start
-Customization
-To personalize your information, simply edit the constants/index.ts file:
+```
 
-typescript
+## Customization
+
+### Update Personal Information
+
+Edit the `constants/index.ts` file to personalize your portfolio:
+
+```typescript
 export const PERSONAL_INFO = {
-  name: "Matin Ghaderian",
-  title: "Front-end Developer",
-  email: "matin22.com@gmail.com",
-  github: "https://github.com/No22net",
+  name: "Your Full Name",
+  title: "Your Professional Title",
+  email: "your.email@example.com",
+  github: "https://github.com/yourusername",
+  linkedin: "https://linkedin.com/in/yourprofile",
 };
-To change your profile picture, replace the file at public/image/profile.jpg.
+```
 
-Deployment
-The easiest way is to use Vercel:
+### Update Profile Picture
 
-bash
-npx vercel
-How to Contribute
-Fork the repository.
+Replace the default profile picture at `public/image/profile.jpg` with your own image of the same dimensions.
 
-Create a new Branch:
+### Customize Content
 
-bash
-git checkout -b feature/AmazingFeature
-Commit your changes:
+All portfolio content (skills, projects, experience) is stored in `constants/index.ts`. Update the respective data structures to reflect your information, projects, and professional experience.
 
-bash
-git commit -m 'Add some AmazingFeature'
-Push to the branch:
+### Modify Styling
 
-bash
-git push origin feature/AmazingFeature
-Open a Pull Request.
+The design system is built on Tailwind CSS with custom Glassmorphism and Neumorphism effects. Adjust the configuration in:
+- `tailwind.config.ts` for Tailwind settings
+- `app/globals.css` for global CSS variables and base styles
 
-License
-This project is released under the MIT License. See the LICENSE file for details.
+## Deployment
 
-Contact
-Report Issues: GitHub Issues page
+### Deploy with Vercel (Recommended)
 
-Email: matin.ghaderian@example.com (sample - please update in constants)
+Vercel is the recommended deployment platform for Next.js applications:
 
-Acknowledgments
-Thanks to the open-source community and everyone who uses amazing tools like Next.js, React, Tailwind CSS, and Framer Motion.
+```bash
+# Install Vercel CLI
+npm install -g vercel
 
+# Deploy to Vercel
+vercel
+```
 
-<div align="center"> Made with ❤️ by <a href="https://github.com/No22net">Matin Ghaderian</a> </div> ```
+### Deploy with Other Platforms
+
+The application can be deployed to any platform that supports Node.js:
+- Netlify
+- Railway
+- Render
+- AWS Amplify
+- DigitalOcean
+
+Follow each platform's documentation for Next.js deployment.
+
+## Contributing
+
+Contributions are welcome. To contribute:
+
+1. Fork the repository
+2. Create a feature branch:
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m 'Add YourFeatureName'
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+5. Open a Pull Request
+
+Please ensure your code follows the existing style and includes appropriate documentation.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for complete details.
+
+## Support
+
+For issues, questions, or suggestions:
+
+- Open an issue on [GitHub Issues](https://github.com/No22net/my-folio-next.js/issues)
+- Contact via email: matin22.com@gmail.com
+
+## Acknowledgments
+
+Built with Next.js, React, TypeScript, Tailwind CSS, and Framer Motion. Special thanks to the open-source community for these exceptional tools and libraries.
+
+---
+
+Developed by [Matin Ghaderian](https://github.com/No22net)
