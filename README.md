@@ -10,9 +10,9 @@ markdown
 <br />
 
 <div align="center">
-  <h1> My Folio – Personal Portfolio</h1>
+  <h1>My Folio – Personal Portfolio</h1>
   <p>
-    <strong>یک پورتفولیوی شخصی مدرن با طراحی ترکیبی Glassmorphism + Neumorphism</strong>
+    <strong>A modern personal portfolio with Glassmorphism + Neumorphism hybrid design</strong>
   </p>
   <p>
     <a href="#-فارسی">فارسی</a> •
@@ -22,38 +22,38 @@ markdown
 
 ---
 
-## 🇮🇷 فارسی
+## فارسی
 
 ### معرفی
 
-**My Folio** یک سایت رزومه و پورتفولیوی شخصی است که با **طراحی ترکیبی Glassmorphism و Neumorphism** ساخته شده تا تجربه‌ای مدرن، زیبا و تعاملی برای نمایش مهارت‌ها، پروژه‌ها و سوابق کاری شما فراهم کند.
+My Folio یک سایت رزومه و پورتفولیوی شخصی است که با طراحی ترکیبی Glassmorphism و Neumorphism ساخته شده تا تجربه‌ای مدرن، زیبا و تعاملی برای نمایش مهارت‌ها، پروژه‌ها و سوابق کاری شما فراهم کند.
 
-این پروژه با بهره‌گیری از جدیدترین ابزارهای توسعه وب از جمله **Next.js 16**، **React 19** و **TypeScript** توسعه یافته و عملکردی فوق‌العاده سریع و بهینه دارد.
+این پروژه با بهره‌گیری از جدیدترین ابزارهای توسعه وب از جمله Next.js 16، React 19 و TypeScript توسعه یافته و عملکردی فوق‌العاده سریع و بهینه دارد.
 
-### ✨ ویژگی‌های کلیدی
+### ویژگی‌های کلیدی
 
 | ویژگی | توضیح |
 |-------|-------|
-| 🌐 **پشتیبانی کامل از RTL** | پشتیبانی کامل از زبان فارسی با فونت زیبای Vazirmatn |
-| 🎨 **طراحی مدرن** | ترکیب افکت‌های Glassmorphism (شیشه‌ای) و Neumorphism (سه‌بعدی) |
-| 🎬 **انیمیشن‌های روان** | پیاده‌سازی شده با Framer Motion برای تعاملات جذاب |
-| 📱 **واکنش‌گرا** | سازگاری کامل با موبایل، تبلت و دسکتاپ |
-| ⚡ **سرعت فوق‌العاده** | استفاده از Turbopack در Next.js 16 |
-| 🔍 **بهینه‌سازی SEO** | شامل متادیتا، Open Graph و Robots |
-| 🔒 **امنیت بالا** | پیاده‌سازی هدرهای امنیتی HTTP |
+| پشتیبانی کامل از RTL | پشتیبانی کامل از زبان فارسی با فونت زیبای Vazirmatn |
+| طراحی مدرن | ترکیب افکت‌های Glassmorphism (شیشه‌ای) و Neumorphism (سه‌بعدی) |
+| انیمیشن‌های روان | پیاده‌سازی شده با Framer Motion برای تعاملات جذاب |
+| واکنش‌گرا | سازگاری کامل با موبایل، تبلت و دسکتاپ |
+| سرعت فوق‌العاده | استفاده از Turbopack در Next.js 16 |
+| بهینه‌سازی SEO | شامل متادیتا، Open Graph و Robots |
+| امنیت بالا | پیاده‌سازی هدرهای امنیتی HTTP |
 
-### 🛠️ تکنولوژی‌های استفاده شده
+### تکنولوژی‌های استفاده شده
 
 | ابزار | نسخه |
 |-------|------|
-| **Next.js** | 16.x |
-| **React** | 19.x |
-| **TypeScript** | 6.x |
-| **Tailwind CSS** | 3.4.x |
-| **Framer Motion** | 12.x |
-| **Lucide React** | 1.x |
+| Next.js | 16.x |
+| React | 19.x |
+| TypeScript | 6.x |
+| Tailwind CSS | 3.4.x |
+| Framer Motion | 12.x |
+| Lucide React | 1.x |
 
-### 📁 ساختار پروژه
+### ساختار پروژه
 my-folio/
 ├── app/
 │ ├── layout.tsx # لایه اصلی + متادیتا
@@ -68,19 +68,19 @@ my-folio/
 │ ├── Contact.tsx # فرم تماس
 │ └── Footer.tsx # فوتر
 ├── constants/
-│ └── index.ts # 📌 داده‌های رزومه (اینجا ویرایش کنید!)
+│ └── index.ts # داده‌های رزومه (اینجا ویرایش کنید!)
 └── public/
 └── image/
 └── profile.jpg # عکس پروفایل
 
 text
 
-### 🚀 راه‌اندازی سریع
+### راه‌اندازی سریع
 
 #### پیش‌نیازها
 
-- **Node.js** نسخه ۱۸ یا بالاتر
-- **npm** یا **yarn**
+- Node.js نسخه ۱۸ یا بالاتر
+- npm یا yarn
 
 #### مراحل نصب و اجرا
 
@@ -100,7 +100,7 @@ npm run dev
 bash
 npm run build
 npm run start
-✏️ شخصی‌سازی (سفارشی‌سازی)
+شخصی‌سازی (سفارشی‌سازی)
 برای اعمال اطلاعات شخصی خود، کافی است فایل constants/index.ts را ویرایش کنید:
 
 typescript
@@ -112,12 +112,12 @@ export const PERSONAL_INFO = {
 };
 همچنین برای تعویض عکس پروفایل، فایل public/image/profile.jpg را جایگزین نمایید.
 
-🌐 استقرار (Deployment)
+استقرار (Deployment)
 ساده‌ترین روش استفاده از Vercel است:
 
 bash
 npx vercel
-🤝 نحوه مشارکت
+نحوه مشارکت
 مخزن (Repository) را Fork کنید.
 
 یک Branch جدید برای تغییرات خود ایجاد کنید:
@@ -134,32 +134,32 @@ bash
 git push origin feature/AmazingFeature
 یک Pull Request باز کنید.
 
-📄 لایسنس
+لایسنس
 این پروژه تحت لایسنس MIT منتشر شده است. برای جزئیات بیشتر به فایل LICENSE مراجعه کنید.
 
-📬 ارتباط با من
+ارتباط با من
 گزارش مشکلات (Issues): صفحه Issues در گیت‌هاب
 
 ایمیل: matin.ghaderian@example.com (لطفاً در فایل constants به‌روز کنید)
 
-🙏 قدردانی
+قدردانی
 با تشکر از جامعه متن‌باز و تمام افرادی که از ابزارهای فوق‌العاده‌ای مانند Next.js، React، Tailwind CSS و Framer Motion استفاده می‌کنند.
 
 
-🇬🇧 English
- Introduction
+English
+Introduction
 My Folio is a modern personal resume and portfolio website with a Glassmorphism + Neumorphism hybrid design. Built with cutting-edge web technologies including Next.js 16 and React 19, it provides a fast, beautiful, and interactive experience for showcasing your skills, projects, and work experience.
 
- Key Features
+Key Features
 Feature	Description
- Full RTL Support	Complete Persian language support with Vazirmatn font
- Modern Design	Glassmorphism + Neumorphism visual effects
- Smooth Animations	Powered by Framer Motion for engaging interactions
- Fully Responsive	Optimized for mobile, tablet, and desktop
- Blazing Fast	Turbopack integration in Next.js 16
- SEO Optimized	Metadata, Open Graph, and Robots included
- High Security	HTTP security headers implemented
- Technologies Used
+Full RTL Support	Complete Persian language support with Vazirmatn font
+Modern Design	Glassmorphism + Neumorphism visual effects
+Smooth Animations	Powered by Framer Motion for engaging interactions
+Fully Responsive	Optimized for mobile, tablet, and desktop
+Blazing Fast	Turbopack integration in Next.js 16
+SEO Optimized	Metadata, Open Graph, and Robots included
+High Security	HTTP security headers implemented
+Technologies Used
 Tool	Version
 Next.js	16.x
 React	19.x
@@ -167,7 +167,7 @@ TypeScript	6.x
 Tailwind CSS	3.4.x
 Framer Motion	12.x
 Lucide React	1.x
- Project Structure
+Project Structure
 text
 my-folio/
 ├── app/
@@ -183,11 +183,11 @@ my-folio/
 │   ├── Contact.tsx       # Contact form
 │   └── Footer.tsx        # Footer
 ├── constants/
-│   └── index.ts          #  Resume data (edit here!)
+│   └── index.ts          # Resume data (edit here!)
 └── public/
     └── image/
         └── profile.jpg   # Profile picture
- Quick Start
+Quick Start
 Prerequisites
 Node.js version 18 or higher
 
@@ -210,7 +210,7 @@ Production Build
 bash
 npm run build
 npm run start
- Customization
+Customization
 To personalize your information, simply edit the constants/index.ts file:
 
 typescript
@@ -222,12 +222,12 @@ export const PERSONAL_INFO = {
 };
 To change your profile picture, replace the file at public/image/profile.jpg.
 
- Deployment
+Deployment
 The easiest way is to use Vercel:
 
 bash
 npx vercel
- How to Contribute
+How to Contribute
 Fork the repository.
 
 Create a new Branch:
@@ -244,15 +244,15 @@ bash
 git push origin feature/AmazingFeature
 Open a Pull Request.
 
- License
+License
 This project is released under the MIT License. See the LICENSE file for details.
 
- Contact
+Contact
 Report Issues: GitHub Issues page
 
 Email: matin.ghaderian@example.com (sample - please update in constants)
 
- Acknowledgments
+Acknowledgments
 Thanks to the open-source community and everyone who uses amazing tools like Next.js, React, Tailwind CSS, and Framer Motion.
 
 
