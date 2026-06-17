@@ -1,4 +1,3 @@
-📄 README.md – نسخه‌ی حرفه‌ای
 markdown
 <div align="center">
   <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License" />
@@ -11,7 +10,7 @@ markdown
 <br />
 
 <div align="center">
-  <h1>✨ My Folio – Personal Portfolio</h1>
+  <h1> My Folio – Personal Portfolio</h1>
   <p>
     <strong>یک پورتفولیوی شخصی مدرن با طراحی ترکیبی Glassmorphism + Neumorphism</strong>
   </p>
@@ -25,7 +24,7 @@ markdown
 
 ## 🇮🇷 فارسی
 
-### 🚀 معرفی
+### معرفی
 
 **My Folio** یک سایت رزومه و پورتفولیوی شخصی است که با **طراحی ترکیبی Glassmorphism و Neumorphism** ساخته شده تا تجربه‌ای مدرن، زیبا و تعاملی برای نمایش مهارت‌ها، پروژه‌ها و سوابق کاری شما فراهم کند.
 
@@ -148,19 +147,19 @@ git push origin feature/AmazingFeature
 
 
 🇬🇧 English
-🚀 Introduction
+ Introduction
 My Folio is a modern personal resume and portfolio website with a Glassmorphism + Neumorphism hybrid design. Built with cutting-edge web technologies including Next.js 16 and React 19, it provides a fast, beautiful, and interactive experience for showcasing your skills, projects, and work experience.
 
-✨ Key Features
+ Key Features
 Feature	Description
-🌐 Full RTL Support	Complete Persian language support with Vazirmatn font
-🎨 Modern Design	Glassmorphism + Neumorphism visual effects
-🎬 Smooth Animations	Powered by Framer Motion for engaging interactions
-📱 Fully Responsive	Optimized for mobile, tablet, and desktop
-⚡ Blazing Fast	Turbopack integration in Next.js 16
-🔍 SEO Optimized	Metadata, Open Graph, and Robots included
-🔒 High Security	HTTP security headers implemented
-🛠️ Technologies Used
+ Full RTL Support	Complete Persian language support with Vazirmatn font
+ Modern Design	Glassmorphism + Neumorphism visual effects
+ Smooth Animations	Powered by Framer Motion for engaging interactions
+ Fully Responsive	Optimized for mobile, tablet, and desktop
+ Blazing Fast	Turbopack integration in Next.js 16
+ SEO Optimized	Metadata, Open Graph, and Robots included
+ High Security	HTTP security headers implemented
+ Technologies Used
 Tool	Version
 Next.js	16.x
 React	19.x
@@ -168,7 +167,7 @@ TypeScript	6.x
 Tailwind CSS	3.4.x
 Framer Motion	12.x
 Lucide React	1.x
-📁 Project Structure
+ Project Structure
 text
 my-folio/
 ├── app/
@@ -184,11 +183,11 @@ my-folio/
 │   ├── Contact.tsx       # Contact form
 │   └── Footer.tsx        # Footer
 ├── constants/
-│   └── index.ts          # 📌 Resume data (edit here!)
+│   └── index.ts          #  Resume data (edit here!)
 └── public/
     └── image/
         └── profile.jpg   # Profile picture
-🚀 Quick Start
+ Quick Start
 Prerequisites
 Node.js version 18 or higher
 
@@ -211,7 +210,7 @@ Production Build
 bash
 npm run build
 npm run start
-✏️ Customization
+ Customization
 To personalize your information, simply edit the constants/index.ts file:
 
 typescript
@@ -223,12 +222,12 @@ export const PERSONAL_INFO = {
 };
 To change your profile picture, replace the file at public/image/profile.jpg.
 
-🌐 Deployment
+ Deployment
 The easiest way is to use Vercel:
 
 bash
 npx vercel
-🤝 How to Contribute
+ How to Contribute
 Fork the repository.
 
 Create a new Branch:
@@ -245,15 +244,15 @@ bash
 git push origin feature/AmazingFeature
 Open a Pull Request.
 
-📄 License
+ License
 This project is released under the MIT License. See the LICENSE file for details.
 
-📬 Contact
+ Contact
 Report Issues: GitHub Issues page
 
 Email: matin.ghaderian@example.com (sample - please update in constants)
 
-🙏 Acknowledgments
+ Acknowledgments
 Thanks to the open-source community and everyone who uses amazing tools like Next.js, React, Tailwind CSS, and Framer Motion.
 
 
